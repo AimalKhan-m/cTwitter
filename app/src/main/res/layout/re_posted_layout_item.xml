@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:id="@+id/retweetTagTv_LL_RTlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/retweetTagTv_RTlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/retweet_icon"
+                android:paddingStart="8dp"
+                android:text="You Retweeted"
+                android:textColor="#353535"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:drawableTint="#303030" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/postUserName_playout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/postDateTv_playout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="time"
+                android:textColor="#494949"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/postText_playout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/quoteRetweetLCRlayout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quote_retweeted_layout">
+
+            <Button
+                android:id="@+id/tweetLikeIB"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnBlueC"
+                android:elegantTextHeight="false"
+                android:hapticFeedbackEnabled="false"
+                android:padding="16dp"
+
+                android:shadowColor="#00F30000"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#333333"
+                android:textColorHighlight="#E1FF0000"
+                android:textSize="18sp"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/like_icon_heart"
+                app:iconGravity="textStart"
+                app:iconTint="#595959"
+                app:rippleColor="#E1FF0000" />
+
+            <Button
+                android:id="@+id/tweetCommentIB"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnBlueC"
+
+                android:elegantTextHeight="false"
+                android:padding="16dp"
+                android:shadowColor="#22FFFFFF"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/comment_icon"
+                app:iconGravity="textStart"
+                app:iconTint="#595959"
+                app:rippleColor="#00FFFFFF" />
+
+            <Button
+                android:id="@+id/tweetReTweetIB"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/btnBlueC"
+                android:elegantTextHeight="false"
+                android:padding="16dp"
+                android:shadowColor="#22FFFFFF"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/retweet_icon"
+                app:iconGravity="textStart"
+                app:iconTint="#595959"
+                app:rippleColor="#00FFFFFF" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

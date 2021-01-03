@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/homeFrag"
+            android:title="frags"
+            android:icon="@drawable/home_icon"
+            app:showAsAction="always"
+
+            />
+        <item
+            android:id="@+id/TrendingSearchFrag"
+            android:title="frags"
+            android:icon="@drawable/search_icon"
+            app:showAsAction="always"
+
+            />
+        <item
+            android:id="@+id/notificationFrag"
+            android:title="frags"
+            android:icon="@drawable/notification_icon"
+            app:showAsAction="always"
+
+            />
+        <item
+            app:showAsAction="always"
+            android:title="frags"
+            android:id="@+id/messageFrag"
+            android:icon="@drawable/messages_icon"
+            />
+</menu>

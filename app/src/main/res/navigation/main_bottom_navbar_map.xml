@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bottom_navbar_map"
+    app:startDestination="@id/homeFrag">
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.aimal_khan.ctwitter.homeFrag"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/TrendingSearchFrag"
+        android:name="com.aimal_khan.ctwitter.TrendingSearchFrag"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/notificationFrag"
+        android:name="com.aimal_khan.ctwitter.NotificationFrag"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/messageFrag"
+        android:name="com.aimal_khan.ctwitter.MessageFrag"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+</navigation>

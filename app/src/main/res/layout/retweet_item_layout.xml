@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/retweet_icon"
+        android:drawablePadding="8dp"
+        android:paddingBottom="4dp"
+        android:text="Retweeted"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        app:drawableTint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/retweet_include"
+        layout="@layout/tweet_body_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/retweetLCRlayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retweet_include">
+
+        <Button
+            android:id="@+id/tweetLikeIB"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:elegantTextHeight="false"
+            android:hapticFeedbackEnabled="false"
+            android:shadowColor="#00F30000"
+            android:text="1"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#333333"
+
+            android:textColorHighlight="#E1FF0000"
+            android:textSize="18sp"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/like_icon_heart"
+            app:iconGravity="textStart"
+            app:iconTint="#595959"
+            app:rippleColor="#E1FF0000"
+            app:strokeColor="#007A7A7A"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/tweetCommentIB"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:elegantTextHeight="false"
+            android:shadowColor="#22FFFFFF"
+
+            android:text="1"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/comment_icon"
+            app:iconGravity="textStart"
+            app:iconTint="#595959"
+            app:rippleColor="#00FFFFFF"
+            app:strokeColor="#007A7A7A"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/tweetReTweetIB"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:elegantTextHeight="false"
+            android:shadowColor="#22FFFFFF"
+            android:text="1"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/retweet_icon"
+            app:iconGravity="textStart"
+            app:iconTint="#595959"
+            app:rippleColor="#00FFFFFF"
+            app:strokeColor="#007A7A7A"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/retweetLCRlayout"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
